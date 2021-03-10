@@ -10,8 +10,8 @@
 }
 
 .grid-item {
-    background-color: azure;
-    border: black 1px solid;
+    background-color: black;
+    border: azure 1px solid;
     min-width: 0.5vw;
     min-height: 0.5vw;
 }
@@ -25,5 +25,10 @@ button {
 }
 
 body {
-    background-image: url('pattern.png');
+    background-color: black;
+}
+
+.title {
+    text-align: center;
+    color: ghostwhite;
 }

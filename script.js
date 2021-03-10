@@ -2,12 +2,6 @@ let container = document.querySelector('.grid-container');
 
 window.addEventListener('load', setDefault);
 
-function getRandomColor() {
-    let r  = Math.floor(Math.random() * 255);
-    let g  = Math.floor(Math.random() * 255);
-    let b  = Math.floor(Math.random() * 255);
-    return `rgb(${r},${g},${b})`; 
-}
 
 
 let reset_btn = document.querySelector('.reset');
@@ -15,7 +9,7 @@ let reset_btn = document.querySelector('.reset');
 reset_btn.addEventListener('click', function(){
     let cells = Array.from(document.querySelectorAll('.grid-item'));
     cells.forEach(cell => {
-        cell.style.backgroundColor = 'azure';
+        cell.style.backgroundColor = 'black';
     })
 })
 
@@ -60,6 +54,14 @@ function setDefault() {
     setColumns(16);
     setGrid(16);
     makeGridChangeColor();
+}
+
+
+function getRandomColor() {
+    let r  = Math.floor(Math.random() * 255);
+    let g  = Math.floor(Math.random() * 255);
+    let b  = Math.floor(Math.random() * 255);
+    return `rgb(${r},${g},${b})`; 
 }
 
 
